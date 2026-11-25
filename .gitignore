@@ -1,0 +1,80 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =============================================================================
+# Virtual Environment
+# =============================================================================
+.venv/
+venv/
+ENV/
+env/
+.venv
+
+# =============================================================================
+# IDE
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# =============================================================================
+# Konfiguration (Secrets)
+# =============================================================================
+.env
+.env.local
+.env.*.local
+
+# =============================================================================
+# Ausgabedateien (Auto-Generated)
+# =============================================================================
+data/auswertungen/
+data/klausurpakete/
+*.log
+run_ki.log
+run_ki_qwen.log
+
+# =============================================================================
+# Streamlit Cache
+# =============================================================================
+.streamlit/
+
+# --- Datenschutz-Absicherung 2026-10-09 (Skill-Bibliothek v1.1): nur ergänzt, nichts verschoben ---
+data/klausuren/Abiturvorschlaege/
+data/Auswertung Gutachter/
+*Gutachtetn*.xlsx
+
+# --- Ergänzt 2026-11-25 (privates GitHub-Repository) ---
+# Gutachter-Rückmeldungen der Schulen enthalten Inhalte laufender Abiturvorschläge
+*Auswertung*Gutachten*.xlsx
+*Auswertung*Gutachter*
+data/_streamlit_session/
+*.bak
+# Skill-Paket wird gebaut (scripts/skill_bauen.py) und als Release angehängt
+dist/

@@ -1,0 +1,35 @@
+HINWEIS – Ablage der zu begutachtenden Klausurvorschläge
+=========================================================
+
+Kopiere die zu begutachtenden PDF-Dateien in diesen Ordner.
+Pro Vorschlag wird ein Unterordner empfohlen, ist aber nicht zwingend.
+
+WICHTIG: PDF- und DOCX-Dateien werden erkannt.
+
+Dateibenennungs-Konventionen
+-----------------------------
+Das Skript erkennt SM/LM-Paare automatisch anhand des Dateinamens.
+Schülermaterial und Lehrermaterial müssen dieselbe Kennung tragen;
+das Lehrermaterial muss eines der folgenden Muster im Dateinamen enthalten:
+
+  Lehrermaterial wird erkannt wenn der Dateiname eines davon enthält:
+    _L      z.B. AufgA_L.pdf
+    Lehrer  z.B. 2022Mecha_Lehrer_A.pdf
+    _EWH    z.B. 2024_Mecha_eA_I_EWH.pdf
+    <Zahl>L z.B. 2023MechatronikEAA1L.pdf
+
+Beispielstruktur:
+  Klausuren/
+    2025_Mecha_Vorschlag_A/
+      2025MechaEAAufgA.pdf           ← Schülermaterial
+      2025MechaEAAufgA_EWH.pdf       ← Lehrermaterial (Erwartungshorizont)
+
+    2025_Mecha_Vorschlag_B/
+      2025MechaEAAufgB.pdf
+      2025MechaEAAufgB_Lehrer.pdf
+
+Nach dem Kopieren einfach starten mit:
+  ./starten.sh
+
+Ausgaben (DOCX-Gutachten + XLSX-Bericht) erscheinen im Ordner:
+  Auswertungen/
